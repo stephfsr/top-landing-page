@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+:root {
+    --roboto: 'Roboto', sans-serif;
+    --color001: #1F2937;
+    --color002: #f9faf8;
+    --color003: #e5e7eb;
+    --color004: #3882f6;
+    --f-size-xs: 18px;
+    --f-size-s: 24px;
+    --f-size-m: 36px;
+    --f-size-l: 48px;
+    --f-weight-b: 900;
+    --f-weight-l: 100;
+    --f-style-i: italic;
+    --alpha: 0.8;
+}
+
+.flex {
+    display: flex;
+}
+
+body {
+    width: 100vw;
+    height: auto;
+    font-family: var(--roboto);
+    font-size: var(--f-size-xs);
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    background-color: var(--color001);
+    color: var(--color002);
+    justify-content: space-between;
+    height: 590px;
+}
+
+.full {
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+nav {
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+nav .left {
+    font-size: var(--f-size-s);
+    font-weight: var(--f-weight-b)
+}
+
+.left, .right {
+    width: 50%; 
+}
+
+ul {
+    gap: 1rem;
+    justify-content: flex-end;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: var(--color003);
+    text-decoration: none;
+}
+
+h1 {
+    font-size: var(--f-size-l);
+    font-weight: var(--f-weight-b);
+}
+
+.left p {
+    color: var(--color003);
+    font-size: var(--f-size-s);
+    margin-bottom: .5rem;
+}
+
+.left button {
+    background-color: var(--color004);
+    color: var(--color002);
+    font-weight: var(--f-weight-b);
+    font-size: var(--f-size-xs);
+    border: none;
+    width: 7.5rem;
+    height: 2.3rem;
+    border-radius: 6px;
+}
+
+#hero {
+    height: 500px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#hero .left {
+    width: 50%;
+}
+
+#hero .right {
+    width: 45%;
+    height: 50%;
+    flex-shrink: 0;
+}
+
+.placeholder {
+    width: 100%;
+    background-color: var(--color004);
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+#cards {
+    width: 100vw;
+    height: 600px;
+    text-align: center;
+    text-wrap: wrap;
+}
+
+#cards h3 {
+    height: 15%;
+    font-size: var(--f-size-m);
+    font-weight: var(--f-weight-b);
+    color: var(--color001);
+    justify-content: center;
+    align-items: end;
+}
+
+.card {
+    margin-top: 3rem;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 22%;
+}
+
+.card p{
+    padding-top: 1rem;
+    color: var(--color001);
+    opacity: var(--alpha);
+}
+
+.blank {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 15px;
+    border: 3px solid #3882f6;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-between;
+    height: 85%;
+}
+
+#quote {
+    width: 100%;
+    height: 400px;
+    background-color:var(--color003);
+    align-items: center;
+}
+
+.text {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.text p {
+    color: var(--color001);
+    font-size: var(--f-size-m);
+    font-weight: var(--f-weight-l);
+    font-style: var(--f-style-i);
+    text-align: left;
+}
+
+.text em {
+    display: block;
+    width: 100%;
+    text-align: right;
+    font-style: normal;
+    font-size: var(--f-size-s);
+    font-weight: 600;
+}
+
+#sign {
+    width: 100%;
+    height: 400px;
+    align-items: center;
+}
+
+.sign {
+    width: 75%;
+    height: 50%;
+    background-color: var(--color004);
+    margin: 0 auto;
+    color: #fff;
+    align-items: center;
+    border-radius: .6rem;
+}
+
+.sign .call {
+    width: 70%;
+    margin-left: auto;
+}
+
+.sign .call h4 {
+    font-size: var(--f-size-s);
+}
+
+.sign .call p {
+    font-size: var(--f-size-xs);
+}
+
+.sign .button {
+    width: 15%;
+    margin-right: auto;
+}
+
+.sign button {
+    width: 75%;
+    height: 3rem;
+    background-color: var(--color004);
+    color: #fff;
+    border: 2.5px solid #fff;
+    border-radius: 6px;
+}
+
+.sign button p {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+
+footer {
+    background-color: var(--color001);
+    color: var(--color002);
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+}
